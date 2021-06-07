@@ -1,0 +1,87 @@
+body {
+    background: #0a0a0a;
+    font-family: "Nunito", sans-serif;
+}
+.main-section{
+    position: relative;
+    float: left;
+}
+.header {
+    padding-top: 100;
+    margin-top: 100;
+    position: absolute;
+}
+.title {
+    font-weight: 700;
+}
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* This is the style for the main navbar */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+#mainNavbar .nav-link {
+    color: white;
+}
+#mainNavbar .nav-link:hover {
+    color: #f5d300;
+}
+#mainNavbar .navbar-brand {
+    color: #09fbd3;
+    font-size: 1.5rem;
+}
+#headingGroup span {
+    color: #fe53bb;
+}
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+.navbar.scrolled {
+    background: #fe53bb;
+    transition: background 1000ms;
+}
+.main-heading{
+    font-family: 'Fugaz One', cursive;
+    color:#eeeeee;
+    font-weight: bold;
+}
+.green{
+    font-family: 'Fugaz One', cursive;
+    color: #09fbd3;
+    font-weight: bold;
+}
+.yellow{
+    font-family: 'Fugaz One', cursive;
+    color:#f5d300;
+    font-weight: bold;
+}
+.blue{
+    font-family: 'Fugaz One', cursive;
+    color:aqua;
+    font-weight: bold;
+}
+.custom-paragraph{
+    color: #eeeeee;
+    font-weight: 300;
+}
+.money{
+    color: lime;
+    font-weight: bold;
+}
+.neon-weekly{
+    font-style: italic;
+}
+@media (max-width: 1400px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="imgs/icon.jpg">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Wharton - Final Project</title>
+</head>
+
+<body class="px-0">
+    
+    <!-- This navbar was borrowed from a bootstrap tutorial class I found on Udemy. The course is The Web Developer Bootcamp 2021 by Colt Steele.-->
+
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="index.html" class="navbar-brand">NEON</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#links" aria-label="Toggle navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="links">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="GREEN.html" class="nav-link">GREEN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="BLUE.html" class="nav-link">BLUE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="YELLOW.html" class="nav-link">YELLOW</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-6 align-items-center justify-content">
+                <h2 id="titleToChange" class="text-center main-heading">Ben's Neon Emporium</h2>
+                <button id="colorChangeButton" class="btn btn-default">Change Color</button>
+                <p class="text-center custom-paragraph">Ben's Neon Emporium is your one stop shop for all things neon. We have green, we have blue, we have yellow. What more could you want? We are located at the intersection of 1st and Main Street. Come on by and find out why the New York Times is calling us the best Neon shop in the city!</p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/img1.jpg" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 id="historyToChange" class="text-center green">History</h2>
+                <p class="text-center custom-paragraph">Ben's Neon Emporium started as a small family owned neon shop specializing in building the finest neon in the land. Now BNE has become a multinational neon superpower. We own 99% of the marketshare and we are coming for 100%. Watch out, Neonmart, we're coming for you.</p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/img2.jpg" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 class="text-center blue">About the Owner</h2>
+                <p class="custom-paragraph">Our owner, Ben 'Neonman' Wharton, has been in the neon game since the beginning of this semester and he uses that experience to craft the best neon in the world. He has been nominated by <span class="neon-weekly">Neon Weekly</span> for the neon maker of the year award each year that he has been in business.  </p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/img3.jpg" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 class="text-center yellow">Contact us</h2>
+                <p class="text-center custom-paragraph">Email <a href="mailto:neonman@neonemporium.io">neonman44@neonemporium.io</a> to place your order or for more information. If you need support for a product that you purchased, please call our support line 1 (800) 333-NEON. Absolutely no refunds.</p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/img4.jpg" alt="">
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- This javascript function was taken from a udemy course by Colt Steele. This will change the color of the navbar when the user scrolls down the page. -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

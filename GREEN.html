@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="imgs/icon.jpg">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Wharton - Final Project</title>
+</head>
+
+<body class="px-0">
+    
+    <!-- This navbar was borrowed from a bootstrap tutorial class I found on Udemy. The course is The Web Developer Bootcamp 2021 by Colt Steele. I used other examples from his course to dress up my site.-->
+
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="index.html" class="navbar-brand">NEON</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#links" aria-label="Toggle navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="links">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="GREEN.html" class="nav-link">GREEN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="BLUE.html" class="nav-link">BLUE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="YELLOW.html" class="nav-link">YELLOW</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 class="text-center green">GREEN</h2>
+                <p class="text-center custom-paragraph">Green is the most wonderful color in the entire world. Don't believe me? Just ask my customers.</p>
+                <p class="money text-center">$5</p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/green.jpg" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 class="text-center green">How do we make our green?</h2>
+                <p class="text-center custom-paragraph">We start by mixing a yellow and a blue together. You then bake it for 24 minutes. The secret is to make sure that you let it sit overnight. Once it is removed from its mold, the green is chilled until it reaches the right temperature. Our special process is what makes </p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/green-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 class="text-center green">Nutritional Facts</h2>
+                <p class="text-center custom-paragraph">Green is rich in nitrogen. One serving size makes up 200% of your daily value. Although high in trans fats, our green is also high in potasium, so it is okay to consume in large doses.</p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/green-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <h2 class="text-center green">ORDER NOW!!!</h2>
+                <p class="text-center custom-paragraph">Hurry up and order your Green now. There are only 3 left and they are going fast. At only five dollars, some might say that this deal is a steal. Email <a href="mailto:neonman@neonemporium.io">neonman44@neonemporium.io</a> to place your order.</p>
+            </div>
+            <div class="col-6">
+                <img class="image-fluid w-100" src="imgs/green-4.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- This javascript function was taken from a udemy course by Colt Steele. This will change the color of the navbar when the user scrolls down the page. -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>
